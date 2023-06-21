@@ -14,7 +14,7 @@
     </div>
     <div class="not-wrapper">
       <label for="numberOfTickets">Number of tickets: </label>
-      <input type="number" [(ngModel)]="numberOfTickets" id="numberOfTickets" name="numberOfTickets" placeholder="Number of tickets" />
+      <input type="number" min="1" [(ngModel)]="numberOfTickets" id="numberOfTickets" name="numberOfTickets" placeholder="Number of tickets" />
     </div>
     <button (click)="generateTickets()" id="generateTickets">Draw tickets</button>
   </div>
