@@ -1,0 +1,8 @@
+<nav class="navbar bg-warning">
+  <div class="container-fluid column">
+    <span class="navbar-brand mb-0 h1 text-danger">Loto 6/49</span>
+    <div class="all-tickets">
+      <div (click)="displayTicket(ticket)" *ngFor="let ticket of sharedService.tickets" class="ticket">Ticket ({{ticket.tickets.length}}), super: {{ticket.superzahl || "N/A"}}</div>
+    </div>
+  </div>
+</nav>

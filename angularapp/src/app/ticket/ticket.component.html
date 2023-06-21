@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="ticket-wrapper">
+    <app-ticket-box *ngFor="let ticket of sharedService.ticket?.tickets" [ticket]="ticket" class="ticket"></app-ticket-box>
+
+    <div *ngIf="sharedService.ticket?.superzahl !== null" class="generated-superzahl">
+      <span>Generated superzahl: {{sharedService.ticket?.superzahl}}</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <div class="superzahl-wrapper">
+      <input type="checkbox" [(ngModel)]="superzahl" id="superzahl" name="superzahl" />
+      <label for="superzahl">Superzahl</label>
+    </div>
+    <div class="not-wrapper">
+      <label for="numberOfTickets">Number of tickets: </label>
+      <input type="number" [(ngModel)]="numberOfTickets" id="numberOfTickets" name="numberOfTickets" placeholder="Number of tickets" />
+    </div>
+    <button (click)="generateTickets()" id="generateTickets">Draw tickets</button>
+  </div>
+</div>

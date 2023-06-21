@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  margin: 0px;
+  padding: 50px 0px 50px 300px;
+  max-width: none;
+}
+
+.ticket {
+  display: inline-block;
+  border: 4px solid red;
+  margin: 4px;
+}
+
+.actions {
+  width: 100%;
+  height: 60px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFC107;
+  align-items: center;
+}
+
+.not-wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+
+.not-wrapper * {
+    height: 40px;
+    margin: 8px 8px;
+    padding: 8px 8px;
+}
+
+#numberOfTickets {
+    border-radius: 8px;
+    border: 0px;
+    text-align: right;
+    width: 160px;
+}
+
+#generateTickets {
+  background-color: white;
+  border: 4px solid red;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.superzahl-wrapper {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.generated-superzahl {
+  border-top: 1px solid black;
+  color: red;
+  font-size: 24px;
+  padding: 8px 0px 10px 15px;
+  font-weight: bold;
+}

@@ -1,0 +1,24 @@
+
+
+.ticket-wrapper {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.number {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    text-align: center;
+    align-items: center;
+    color: red;
+    font-weight: bold;
+}
+
+.checked {
+
+}

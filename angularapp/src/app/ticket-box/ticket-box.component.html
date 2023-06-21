@@ -1,0 +1,16 @@
+<div class="ticket-wrapper">
+  <div *ngFor="let item of items; let i = index"
+       [ngClass]="{'checked': item.checked, 'unchecked': !item.checked, 'number': true}">
+
+    <div *ngIf="items[i].checked; then checked else unchecked">
+
+    </div>
+    <ng-template #checked>
+      <span><i class="fas fa-xmark" style="color: #ff0000;"></i></span>
+    </ng-template>
+    <ng-template #unchecked>
+      <span>{{i + 1}}</span>
+    </ng-template>
+
+  </div>
+</div>
